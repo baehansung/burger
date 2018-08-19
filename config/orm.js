@@ -40,7 +40,7 @@ function printQuestionMarks(num) {
 
 var orm = {
     
-    selctAll: function(table, callback) {
+    selectAll: function(table, callback) {
         var queryString = "SELECT * FROM " + table + ";";
         connection.query(queryString, function(err, result) {
             if(err) {
@@ -90,3 +90,5 @@ var orm = {
     }
 
 }
+
+module.exports = orm;
